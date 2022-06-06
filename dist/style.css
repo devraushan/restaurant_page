@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Croissant One";
+    src: url("../src/icon/CroissantOne-Regular.otf");
+}
+
+
+*{
+    margin: 0;
+    
+    /* position: relative; */
+}
+body>img{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+/* body{
+    background-image: url("../src/images/background.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+header{
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    color: aliceblue;
+    font-family: "Croissant One";
+}
+header>img{
+    width: 40px;
+    border-radius: 10px;
+}
+nav{
+    background-color: chocolate;
+    padding: 5px;
+    grid-area: 2/1/3/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    font-family: "Croissant One";
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+nav>div{
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#content{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    min-height: 70vh;
+    align-items: end;
+    
+}
+.welcomeBox{
+    grid-row: 1/3;
+    color: aliceblue;
+    font-family: "Croissant One";
+    font-size: 6rem;
+    
+}
+.saluteBox{
+    grid-row: 3/6;
+    color: orange;
+    font-family: "Croissant One";
+    font-size: 3rem;
+    -webkit-text-stroke: 1px blue;
+}
+
+.menuHeadBox{
+    font-family: "Croissant One";
+    color: aliceblue;
+    font-size: 6rem;
+}
+
+.dishCard{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 70vw;
+    border: solid pink;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    background-color: rgba(66, 126, 11, 0.61);
+}
+.dishCard>h3{
+    color: aqua;
+    font-family: "Croissant One";
+    text-align: center;
+}
+.dishCard>p{
+    text-align: left;
+    color: orange;
+    font-family: "Croissant One";
+
+
+}
+.dishCard>span{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+.contactBox{
+    grid-row: 1/4;
+    border: solid pink;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(66, 126, 11, 0.61);
+}
+.contactBox>h3{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.contactBox>p{
+    color:  yellow;
+    font-size: 1.5rem;
+}
